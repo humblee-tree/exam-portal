@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Admin Panel</h1>
+  <form id="addQ">
+    <input type="text" name="question" placeholder="Question" required><br>
+    <input type="text" name="opt1" placeholder="Option 1" required><br>
+    <input type="text" name="opt2" placeholder="Option 2" required><br>
+    <input type="text" name="opt3" placeholder="Option 3" required><br>
+    <input type="text" name="answer" placeholder="Answer" required><br>
+    <button type="submit">Add Question</button>
+  </form>
+  <script>
+  document.getElementById('addQ').onsubmit = async e => {
+    e.preventDefault();
+    alert('Question added! (Demo, needs backend PHP to save)');
+  };
+  </script>
+</body>
+</html>
